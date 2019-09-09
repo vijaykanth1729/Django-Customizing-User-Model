@@ -1,0 +1,57 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container" style="margin-top: 100px">
+    <div class="card-deck">
+        <div class="card">
+            <a href="https://www.python.org/doc/"><img src="{% static 'blog/images/python.jpg' %}" class="card-img-top"
+                                                       alt="..."></a>
+            <div class="card-body">
+                <h5 class="card-title">Python</h5>
+                <p class="card-text">Python was originally conceptualized by Guido van Rossum in the late 1980s as a
+                    member of the National Research Institute of Mathematics and Computer Science. Initially, it was
+                    designed as a response to the ABC programming language that was also foregrounded in the
+                    Netherlands. Among the main features of Python compared to the ABC language was that Python had
+                    exception handling and was targeted for the Amoeba operating system (go Python!).</p>
+                <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <a href="https://docs.djangoproject.com/en/2.2/"><img src="{%  static 'blog/images/django.png' %}"
+                                                                  class="card-img-top" alt="..."></a>
+            <div class="card-body">
+                <h5 class="card-title">Django</h5>
+                <p class="card-text">Django, on the other hand, is a powerful open source framework that was released
+                    initially in 2005. Factors such as simplicity, reliability, and scalability have largely contributed
+                    to its growth over the past years. For these reasons, it has evolved to be one of the go-to options
+                    for developers and businesses worldwide.
+
+                    A combination of Python and Django has proven to be extremely powerful for application development.
+                    Despite all these, we still hear questions regarding the scope of Python Django web development.
+                    This blog is intended to clear the air on the future scope of Python Django.</p>
+                <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <a href="https://flask.palletsprojects.com/en/1.1.x/"> <img src="{%  static 'blog/images/flask.jpg' %}"
+                                                                        class="card-img-top" alt="..."> </a>
+            <div class="card-body">
+                <h5 class="card-title">Flask</h5>
+                <p class="card-text">Flask (web framework) Flask is a micro web framework written in Python. It is
+                    classified as a microframework because it does not require particular tools or libraries. It has no
+                    database abstraction layer, form validation, or any other components where pre-existing third-party
+                    libraries provide common functions.</p>
+                <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

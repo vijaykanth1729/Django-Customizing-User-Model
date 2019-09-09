@@ -1,0 +1,22 @@
+{% extends 'blog/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="row justify-content-center" style="margin-top: 100px">
+    <div class="col-4">
+        <div class="card">
+            <div class="card-body" style="border: 1px solid;">
+                <center><h1>Update Your Account</h1></center>
+                <form method="post" novalidate>
+                    {% csrf_token %}
+                    {{ account_form|crispy }}
+                    <button class="btn btn-primary" type="submit">Save Changes</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

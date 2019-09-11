@@ -15,7 +15,7 @@ def registration(request):
             # raw_password = form.cleaned_data.get('password1')
             # account = authenticate(email=email, password=raw_password)
             # login(request, account)
-            return redirect('login')
+            return render(request,'account/success_registration.html')
         else:
             context['registration_form'] = form
     else:

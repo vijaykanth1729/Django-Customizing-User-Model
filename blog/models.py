@@ -16,7 +16,7 @@ class Contact(models.Model):
     Email = models.EmailField()
     Subject = models.CharField(max_length=200)
     Message = models.TextField()
-    created_on = models.DateTimeField(default=timezone.now, auto_now=False)
+
 
 
     def __str__(self):

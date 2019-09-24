@@ -2,19 +2,17 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-<div class="container" style="margin-top: 100px">
-    <div class="row">
-        <div class="col-6">
-            <div class="card">
-                <div class="card-body" style="border: 1px solid;">
-                    <center><h1>Update Your Account</h1></center>
-                    <form method="post" novalidate>
-                        {% csrf_token %}
-                        {{ account_form|crispy }}
-                        <button class="btn btn-primary" type="submit">Save Changes</button>
-                    </form>
+<div class="row justify-content-center">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <center><h1 style="color:green">Update Your Account</h1></center>
+                <form method="post" novalidate>
+                    {% csrf_token %}
+                    {{ account_form|crispy }}
+                    <button class="btn btn-success" type="submit">Save Changes</button>
+                </form>
 
-                </div>
             </div>
         </div>
     </div>

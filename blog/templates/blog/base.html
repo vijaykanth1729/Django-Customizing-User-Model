@@ -13,9 +13,7 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Hello, world!</title>
-</head>
-<body>
-<style type="text/css">
+    <style type="text/css">
     .main {
     min-height: 100vh;
     height: 100%;
@@ -36,8 +34,11 @@
          }
 
 
-</style>
 
+
+    </style>
+</head>
+<body>
 
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-info mb-4">
@@ -102,10 +103,12 @@
 
 
 <div class="container">
-<hr/>
-    {% block content %}
+    <div class="main">
+        <hr/>
+        {% block content %}
 
-    {% endblock %}
+        {% endblock %}
+    </div>
 </div>
 
 <!-- Optional JavaScript -->
@@ -126,6 +129,8 @@
     border: 1px solid #000;
 
     }
+
+
 
 
 </style>
